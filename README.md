@@ -62,6 +62,8 @@ EducAI2025 est une plateforme web éducative basée sur l’intelligence artific
 ├── analytics-service/        # Tracking et Statistiques
 ├── recommender-service/      # IA de recommandation
 ├── chatbot-service/          # LLM pédagogique
+├── content-service/          # Gestion de contenus
+├── gamification-service/     # Système de badges
 ├── frontend/                 # UI Next.js + Tailwind
 ├── docker-compose.yml        # Orchestration locale
 ├── .github/                  # CI/CD GitHub Actions
@@ -89,10 +91,15 @@ EducAI2025 est une plateforme web éducative basée sur l’intelligence artific
 
 ## Contributeurs
 
-- **IA Engineer** – Recommandation, NLP, MLOps
-- **DevOps 1** – CI/CD, Orchestration, Monitoring
-- **DevOps 2** – Backend APIs, Frontend Integration
 
+##  Commandes d’installation pour chaque microservice
+
+```
+cd [auth]-service
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
 
 > Ce projet est sous licence MIT. Pour toute collaboration ou suggestion, veuillez ouvrir une issue ou un pull request.
 
