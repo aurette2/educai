@@ -1,0 +1,21 @@
+.env
+venv/
+*/venv
+*/.env
+# Docker
+.DS_Store
+# VSCode
+*.code-workspace
+# Logs
+*.log
+# Python
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+# Database
+*.db
+# Git
+.git/
+# IDE
+.idea/
