@@ -1,0 +1,216 @@
+/* Custom styles for EducAI */
+
+:root {
+    --primary-color: #0d6efd;
+    --primary-dark: #0b5ed7;
+    --success-color: #198754;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #0dcaf0;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --gray-color: #6c757d;
+}
+
+body {
+    background-color: var(--light-color);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* Navigation styles */
+.navbar {
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+}
+
+.navbar-brand {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    transform: translateY(-1px);
+}
+
+/* Card styles */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 30px rgba(0,0,0,.12);
+}
+
+.card-header {
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    background-color: #fff;
+    padding: 1.25rem;
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Form styles */
+.form-control {
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    border: 1px solid rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,.15);
+}
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
+}
+
+.input-group .btn {
+    padding: 0.75rem;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* Button styles */
+.btn {
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-dark));
+    transform: translateY(-1px);
+}
+
+/* Alert styles */
+.alert {
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+}
+
+.alert-danger {
+    background-color: rgba(220,53,69,.1);
+    color: var(--danger-color);
+}
+
+.alert-success {
+    background-color: rgba(25,135,84,.1);
+    color: var(--success-color);
+}
+
+/* Badge styles */
+.badge {
+    padding: 0.5em 0.75em;
+    font-weight: 500;
+    border-radius: 6px;
+}
+
+/* List group styles */
+.list-group-item {
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    padding: 1rem 1.25rem;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+/* Icon styles */
+.bi {
+    vertical-align: -0.125em;
+}
+
+/* Utility classes */
+.shadow-sm {
+    box-shadow: 0 2px 8px rgba(0,0,0,.08) !important;
+}
+
+.text-muted {
+    color: var(--gray-color) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 1rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+}
+
+/* Animation classes */
+.fade-enter {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms ease-in, transform 300ms ease-in;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1d20;
+        color: #e9ecef;
+    }
+
+    .card,
+    .list-group-item,
+    .card-header {
+        background-color: #2b3035;
+        color: #e9ecef;
+    }
+
+    .text-muted {
+        color: #adb5bd !important;
+    }
+
+    .form-control {
+        background-color: #2b3035;
+        border-color: rgba(255,255,255,.1);
+        color: #e9ecef;
+    }
+
+    .form-control:focus {
+        background-color: #2b3035;
+        color: #e9ecef;
+    }
+}
