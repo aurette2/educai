@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot EducAI</title>
+</head>
+<body>
+    <h2>Dialogue avec le Chatbot</h2>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="message" placeholder="Pose ta question..." required />
+        <button type="submit">Envoyer</button>
+    </form>
+
+    {% if user_input %}
+        <p><strong>Vous :</strong> {{ user_input }}</p>
+        <p><strong>Bot :</strong> {{ bot_response }}</p>
+    {% endif %}
+</body>
+</html>
